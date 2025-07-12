@@ -47,7 +47,7 @@ function Home() {
     ]
     return (
         <>
-            <header className="w-full h-screen bg-[url(/public/bg-1.jpg)] bg-center bg-fixed">
+            <header className="w-full h-screen bg-[url(/bg-1.jpg)] bg-center bg-fixed">
                 <div className="bg-gradient-to-r from-black/60 to-black/60 w-full h-screen flex flex-col space-y-20 items-center justify-center">
                     <div className=" max-w-9/10 md:max-w-7/10 lg:max-w-6/10 font-playfair text-5xl md:text-6xl lg:text-6xl text-gray-100">
                         <h2 className="text-center leading-tight">
