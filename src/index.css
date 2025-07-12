@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@800&family=Playfair+Display:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton@800@300&family=Cinzel:wght@800@300&family=Playfair+Display:wght@800@300&display=swap");
 
 @import "tailwindcss";
+
 @theme {
     --font-anton: "Anton", sans-serif;
     --font-cinzel: "Cinzel", serif;
