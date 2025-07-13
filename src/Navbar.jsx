@@ -21,6 +21,14 @@ function Navbar() {
     // menu
     const [isMenu, setIsMenu] = useState(false)
 
+    // section observer 
+    const [isSection, setIsSection] = useState("Home")
+
+    const  handleClick = (item) => {
+       setIsMenu(!isMenu)
+       setIsSection(item)
+    }
+
     return (
             <nav className="fixed text-gray-100 top-0 w-full backdrop-blur-md font-serif bg-white/10 border-b border-white/20 shadow-md md:p-4 md:mx-auto rounded-xl z-50 " >
                 <div className=" mx-auto lg:px-8 flex md:flex-wrap justify-between items-center md:gap-5 ">
@@ -34,7 +42,7 @@ function Navbar() {
                     <div
                         className={`md:flex md:flex-wrap md:grow lg:grow-3 md:gap-5 text-center space-y-3 md:items-center absolute opacity-0 md:opacity-100 md:z-auto md:static md:translate-x-0 w-full md:w-auto h-screen md:h-auto transition-all ease-in-out duration-300 ${
                           isMenu
-                          ? "top-[80px] translate-x-0 opacity-100 z-10 backdrop-blur-md bg-black/90 "
+                          ? "top-[80px] translate-x-0 opacity-100 z-10 backdrop-blur-md bg-black/90 md:bg-yellow-400 "
                           : "top-[80px] translate-x-full opacity-0 z-[-1]"
                         }`}
                         >
@@ -42,8 +50,8 @@ function Navbar() {
                       {/* Navigate  */}
                         <div className=" flex flex-col md:flex-row md:gap-3 lg:gap-0 justify-evenly md:grow md:my-auto text-2xl md:text-base font-medium leading-snug">
                             {navigate.map((item) => (
-                                <Link className=" md:relative md:after:content-[''] md:after:absolute md:after:left-0 md:after:bottom-0 md:after:h-[3px] md:after:w-full md:after:origin-center md:after:transform md:after:transition-transform md:after:duration-300 md:after:scale-x-0 md:hover:after:scale-x-100
-                                md:text-lg md:p-0 w-auto md:hover:bg-transparent hover:bg-white/20 md:after:bg-gray-100 p-2 active:scale-90 transition-all duration-300" onClick={() => setIsMenu(!isMenu)} to={item.url} key={item.name}>
+                                <Link className={` md:relative md:after:content-[''] md:after:absolute md:after:left-0 md:after:bottom-0 md:after:h-[3px] md:after:w-full md:after:origin-center md:after:transform md:after:transition-transform md:after:duration-300 md:after:scale-x-0 md:hover:after:scale-x-100
+                                md:text-lg md:p-0 w-auto md:hover:bg-transparent hover:bg-white/20 md:after:bg-gray-100 p-2 active:scale-90 transition-all duration-300 ${isSection === item.name?"text-amber-400":" text-gray-100" }`} onClick={()=> handleClick(item.name)} to={item.url} key={item.name}>
                                     {item.name}
                                 </Link>
                             ))}
