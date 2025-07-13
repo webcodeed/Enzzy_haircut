@@ -25,7 +25,7 @@ function Navbar() {
     const [isSection, setIsSection] = useState("Home")
 
     const  handleClick = (item) => {
-       setIsMenu(!isMenu)
+       setIsMenu(false)
        setIsSection(item)
     }
 

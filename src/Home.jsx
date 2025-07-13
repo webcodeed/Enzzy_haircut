@@ -66,10 +66,10 @@ function Home() {
 
             <main>
                 <section className="bg-black min-h-screen w-full flex flex-col items-center justify-center text-gray-100 py-5 ">
-                    <h2 className="font-playfair font-bold text-5xl  lg:text-6xl mb-10 lg:mb-15">
-                        The Experience
+                    <h2 className="font-playfair font-bold text-5xl  lg:text-6xl mb-20 lg:mb-15">
+                        The Vibe
                     </h2>
-                    <div className="text-gray-200 text-xl lg:text-2xl leading-normal text-center max-w-5/6 lg:max-w-5/10 space-y-3  ">
+                    <div className="text-gray-200 text-xl lg:text-2xl text-center max-w-5/6 lg:max-w-7/10 space-y-3 leading-relaxed  ">
                         <p>
                             At{" "}
                             <span className="text-yellow-300 font-semibold">
@@ -79,18 +79,12 @@ function Home() {
                             clean fades, beard trims, and fresh styles with a
                             vibe that feels like home. Our space is laid back,
                             our music’s always on, and the energy stays sharp.
-                        </p>
-                        <p>
                             Whether you're here for a quick shape-up or a full
                             transformation, you’ll leave feeling confident and
-                            looking your best.
+                            looking your best. We’re not just a barbershop in
+                            Abeokuta, we’re a community. Pull up, relax, and
+                            let’s elevate your style.{" "}
                         </p>
-                        <p>
-                            We’re not just a barbershop in Abeokuta, we’re a
-                            community.
-                        </p>
-
-                        <p>Pull up, relax, and let’s elevate your style. </p>
                     </div>
                     <button className="hover:bg-gradient-to-b hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600  py-5 bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800 font-serif text-black text-2xl font-semibold rounded-xl shadow-md active:scale-90 transition-all duration-300 mt-15 lg:mt-20">
                         <a className="py-5 px-8" href="/">
@@ -139,7 +133,9 @@ function Home() {
                                 ))}
                             </div>
                             <div className=" space-y-2">
-                            <h2 className=" text-lg font-serif text-center font-semibold">HOME SERVICE</h2>
+                                <h2 className=" text-lg font-serif text-center font-semibold">
+                                    HOME SERVICE
+                                </h2>
                                 {homePrice.map((item, index) => (
                                     <div
                                         className="flex justify-between items-center text-xl lg:text-2xl"
@@ -154,20 +150,18 @@ function Home() {
                                         </p>
                                     </div>
                                 ))}
-                            <p className=" mt-5 text-lg font-semibold">
-                              <span className="font-black" >
-NOTE: 
-                              </span> {" "}
-                               THE PRICE VARIES BASED ON YOUR LOCATION
-                                AND IT MAY INCREASE ACCORDINGLY
-                            </p>
+                                <p className=" mt-5 text-lg font-semibold">
+                                    <span className="font-black">NOTE:</span>{" "}
+                                    THE PRICE VARIES BASED ON YOUR LOCATION AND
+                                    IT MAY INCREASE ACCORDINGLY
+                                </p>
                             </div>
                         </div>
                         <button className="hover:bg-gradient-to-b hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600  py-5 bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800 font-serif text-black text-2xl font-semibold rounded-xl shadow-md active:scale-90 transition-all duration-300 mt-15 mb-10 lg:mt-20">
-                        <a className="py-5 px-8" href="/">
-                            Book Now
-                        </a>
-                    </button>
+                            <a className="py-5 px-8" href="/">
+                                Book Now
+                            </a>
+                        </button>
                     </div>
                 </section>
             </main>
