@@ -69,7 +69,7 @@ function Home() {
                     <h2 className="font-playfair font-bold text-5xl  lg:text-6xl mb-10 lg:mb-15">
                         The Experience
                     </h2>
-                    <div className="text-gray-200 font-serif text-xl lg:text-2xl leading-normal text-center max-w-5/6 lg:max-w-7/10 space-y-3  ">
+                    <div className="text-gray-200 font-serif text-xl lg:text-2xl leading-normal text-center max-w-5/6 lg:max-w-5/10 space-y-3  ">
                         <p>
                             At{" "}
                             <span className="text-yellow-300 font-semibold">
