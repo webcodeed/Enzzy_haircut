@@ -69,7 +69,7 @@ function Home() {
                     <h2 className="font-playfair font-bold text-5xl  lg:text-6xl mb-10 lg:mb-15">
                         The Experience
                     </h2>
-                    <div className="text-gray-200 font-serif text-xl lg:text-2xl leading-normal text-center max-w-5/6 lg:max-w-5/10 space-y-3  ">
+                    <div className="text-gray-200 text-xl lg:text-2xl leading-normal text-center max-w-5/6 lg:max-w-5/10 space-y-3  ">
                         <p>
                             At{" "}
                             <span className="text-yellow-300 font-semibold">
@@ -165,7 +165,7 @@ NOTE:
                         </div>
                         <button className="hover:bg-gradient-to-b hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600  py-5 bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800 font-serif text-black text-2xl font-semibold rounded-xl shadow-md active:scale-90 transition-all duration-300 mt-15 mb-10 lg:mt-20">
                         <a className="py-5 px-8" href="/">
-                            Book Your Cut Now
+                            Book Now
                         </a>
                     </button>
                     </div>
