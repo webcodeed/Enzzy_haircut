@@ -1,5 +1,8 @@
+// import Project from "./Project"
+
 import image1 from "./assets/images/logo-top.png"
 import image2 from "./assets/images/logo-trans.png"
+import SlideShow from "./SlideShow"
 function Home() {
     const salonPrice = [
         {
@@ -165,6 +168,9 @@ function Home() {
                     </div>
                 </section>
             </main>
+{/* <Project/> */}
+<SlideShow/>
+
         </>
     )
 }
