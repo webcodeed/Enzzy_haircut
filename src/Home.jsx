@@ -58,7 +58,7 @@ function Home() {
 
             <main>
                 <section className="bg-black min-h-screen w-full flex flex-col items-center justify-center text-gray-100 py-5 ">
-                    <h2 className="font-playfair font-bold text-5xl lg:text-6xl mb-20 lg:mb-15">
+                    <h2 className="font-playfair font-bold text-5xl lg:text-6xl mb-15">
                         The Vibe
                     </h2>
                     <div className="text-gray-200 text-xl lg:text-2xl text-center max-w-5/6 lg:max-w-7/10 space-y-3 leading-relaxed  ">

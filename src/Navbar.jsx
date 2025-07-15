@@ -9,7 +9,7 @@ function Navbar() {
     const navigate = [
         { name: "Home", url: "/" },
         { name: "About", url: "/about" },
-        { name: "Service", url: "/service" },
+        { name: "Services", url: "/service" },
         { name: "Contact", url: "/contact" },
     ]
     const socials = [
@@ -41,7 +41,7 @@ function Navbar() {
                     <div
                         className={`md:flex md:flex-wrap md:grow lg:grow-3 md:gap-5 text-center space-y-3 md:items-center absolute opacity-0 md:opacity-100 md:z-auto md:static md:translate-x-0 w-full md:w-auto h-screen md:h-auto transition-all ease-in-out duration-300 ${
                           isMenu
-                          ? "top-[80px] translate-x-0 opacity-100 z-10 backdrop-blur-md bg-black/90 md:bg-yellow-400 "
+                          ? "top-[80px] translate-x-0 opacity-100 z-10 backdrop-blur-md bg-black/90 "
                           : "top-[80px] translate-x-full opacity-0 z-[-1]"
                         }`}
                         >

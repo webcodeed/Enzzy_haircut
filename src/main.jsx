@@ -7,6 +7,7 @@ import App from './App.jsx'
 import Home from './Home.jsx'
 import footer from './Footer.jsx'
 import Contact from './Contact.jsx'
+import Service from './Service.jsx'
 
 const routes = createBrowserRouter([
   {path: "/",
@@ -14,6 +15,7 @@ const routes = createBrowserRouter([
     children:[{index: true, element:<Home/>}, 
       {path:"/About" , element: <footer/> },
       {path:"/Contact" , element: <Contact/> },
+      {path:"/Service" , element: <Service/> },
 
     ],
   }
