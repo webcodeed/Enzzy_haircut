@@ -1,7 +1,7 @@
 import { Menu, X } from "lucide-react"
-import { useState } from "react"
+import { useRef, useState } from "react"
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa"
-import { Link } from "react-router"
+import { Link, useLocation } from "react-router"
 import image from './assets/images/logo-trans.png'
 
 function Navbar() {
@@ -22,11 +22,10 @@ function Navbar() {
     const [isMenu, setIsMenu] = useState(false)
 
     // section observer 
-    const [isSection, setIsSection] = useState("Home")
+    const location = useLocation()
 
-    const  handleClick = (item) => {
+    const  handleClick = () => {
        setIsMenu(false)
-       setIsSection(item)
     }
 
     return (
@@ -51,7 +50,7 @@ function Navbar() {
                         <div className=" flex flex-col md:flex-row md:gap-3 lg:gap-0 justify-evenly md:grow md:my-auto text-2xl md:text-base font-medium leading-snug">
                             {navigate.map((item) => (
                                 <Link className={` md:relative md:after:content-[''] md:after:absolute md:after:left-0 md:after:bottom-0 md:after:h-[3px] md:after:w-full md:after:origin-center md:after:transform md:after:transition-transform md:after:duration-300 md:after:scale-x-0 md:hover:after:scale-x-100
-                                md:text-lg md:p-0 w-auto md:hover:bg-transparent hover:bg-white/20 md:after:bg-gray-100 p-2 active:scale-90 transition-all duration-300 ${isSection === item.name?"text-amber-400":" text-gray-100" }`} onClick={()=> handleClick(item.name)} to={item.url} key={item.name}>
+                                md:text-lg md:p-0 w-auto md:hover:bg-transparent hover:bg-white/20 md:after:bg-gray-100 p-2 active:scale-90 transition-all duration-300 ${location.pathname === item.url?"text-amber-400":" text-gray-100" }`} onClick={handleClick} to={item.url} key={item.name}>
                                     {item.name}
                                 </Link>
                             ))}

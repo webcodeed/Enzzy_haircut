@@ -6,12 +6,14 @@ import './index.css'
 import App from './App.jsx'
 import Home from './Home.jsx'
 import footer from './Footer.jsx'
+import Contact from './Contact.jsx'
 
 const routes = createBrowserRouter([
   {path: "/",
     element: <App/>,
     children:[{index: true, element:<Home/>}, 
       {path:"/About" , element: <footer/> },
+      {path:"/Contact" , element: <Contact/> },
 
     ],
   }

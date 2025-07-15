@@ -1,0 +1,23 @@
+function Header({word, boolean}) {
+  return ( 
+    <header className="w-full h-screen bg-[url(/bg-1.jpg)] bg-center bg-fixed">
+                <div className="bg-gradient-to-r from-black/60 to-black/60 w-full h-screen flex flex-col space-y-20 items-center justify-center">
+                    <div className=" max-w-9/10 md:max-w-7/10 lg:max-w-6/10 font-playfair text-5xl md:text-6xl lg:text-6xl text-gray-100">
+                        <h2 className="text-center leading-tight">
+                            {word}
+                        </h2>
+                    </div>
+                    { boolean &&
+                    <button className="hover:bg-gradient-to-b hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600  py-5 bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800 font-serif text-black text-2xl font-semibold rounded-xl shadow-md active:scale-90 transition-all duration-300">
+                        <a className="py-5 px-8" href="/">
+                            Book Now
+                        </a>
+                    </button>
+
+                    }
+                </div>
+            </header>
+   );
+}
+
+export default Header ;
