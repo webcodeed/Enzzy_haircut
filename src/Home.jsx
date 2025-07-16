@@ -25,7 +25,7 @@ function Home() {
                     setStarted(true)
                 }
             },
-            { threshold: 0.8 }
+            { threshold: 0.6 }
         )
 
         const current = vibeRef.current
@@ -136,7 +136,7 @@ function Home() {
                             transition={{ duration: 0.5 }}
                             className="hover:bg-gradient-to-b hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600  py-5 bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800 font-serif text-black text-2xl font-semibold rounded-xl shadow-md active:scale-90 transition-all duration-300 mt-15 lg:mt-20"
                         >
-                            <a className="py-5 px-8" href="/">
+                            <a target="blank" className="py-5 px-8" href="https://wa.me/2348071029309?text=Hello%2C%20I%27d%20like%20to%20schedule%20an%20appointment.%20I%27m%20">
                                 Book Your Cut Now
                             </a>
                         </motion.button>
@@ -208,7 +208,7 @@ function Home() {
                             </div>
                         </div>
                         <button className="hover:bg-gradient-to-b hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600  py-5 bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800 font-serif text-black text-2xl font-semibold rounded-xl shadow-md active:scale-90 transition-all duration-300 mt-15 mb-10 lg:mt-20">
-                            <a className="py-5 px-8" href="/">
+                            <a target="blank" className="py-5 px-8" href="https://wa.me/2348071029309?text=Hello%2C%20I%27d%20like%20to%20schedule%20an%20appointment.%20I%27m%20">
                                 Book Now
                             </a>
                         </button>

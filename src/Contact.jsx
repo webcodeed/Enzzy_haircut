@@ -55,10 +55,10 @@ function Contact() {
                         Use the form below to send us an email. Old fashion
                         phone calls too work -{" "}
                         <a
-                            href="tel:+234"
+                            href="tel:+2347073334128"
                             className=" underline underline-offset-4 text-yellow-600"
                         >
-                            999
+                            +234 707 333 4128
                         </a>
                     </p>
 

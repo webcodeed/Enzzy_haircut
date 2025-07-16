@@ -13,9 +13,9 @@ function Navbar() {
         { name: "Contact", url: "/contact" },
     ]
     const socials = [
-        { icon: <FaTiktok className="w-6 h-6" />, url: "" },
-        { icon: <FaFacebook className="w-6 h-6" />, url: "" },
-        { icon: <FaInstagram className="w-6 h-6" />, url: "" },
+        { icon: <FaTiktok className="w-6 h-6" />, url: "https://www.tiktok.com/@enzzy_cut" },
+        { icon: <FaInstagram className="w-6 h-6" />, url: "https://www.instagram.com/only1_enzzy/" },
+        { icon: <FaFacebook className="w-6 h-6" />, url: "https://www.facebook.com/oyeyemi.eniola.54" },
     ]
 
     // menu
@@ -59,8 +59,8 @@ function Navbar() {
                         {/* Socials */}
                         <ul className="flex justify-center md:justify-end space-x-5 md:space-x-0 md:grow md:gap-5">
                             {socials.map((item, index) => (
-                                <li className="active:scale-80 transition duration-300" onClick={() => setIsMenu(!isMenu)} key={index}>
-                                    <a href={item.url}>{item.icon}</a>
+                                <li className="active:scale-80 transition duration-300" onClick={() => setIsMenu(false)} key={index}>
+                                    <a target="blank" href={item.url}>{item.icon}</a>
                                 </li>
                             ))}
                         </ul>
@@ -69,7 +69,7 @@ function Navbar() {
 
                     {/* CTA  Button */}
                             <button className="hover:bg-gradient-to-b hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600 bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800hover:bg-yellow-600 py-3 bg-yellow-500  text-black font-semibold rounded-xl shadow-md active:scale-90 transition-all duration-300" >
-                                <a className="py-3 px-4" href="/">Book Now</a>
+                                <a target="blank" className="py-3 px-4" href="https://wa.me/2348071029309?text=Hello%2C%20I%27d%20like%20to%20schedule%20an%20appointment.%20I%27m%20">Book Now</a>
                             </button>
 
                     {/* Menu Button */}

@@ -46,7 +46,7 @@ function Service() {
                 word={`Making Our Clients Look and Feel Their Best`}
                 boolean={true}
             />
-            <section className="bg-neutral-700 text-gray-100 w-full min-h-screen">
+            <section className="bg-neutral-700 text-gray-100 text-shadow-md text-shadow-black/50 w-full min-h-screen">
                 <div className=" p-5 text-center">
                   <div className=" space-y-10 my-10">
                     <img
