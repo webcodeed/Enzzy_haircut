@@ -118,7 +118,7 @@ function Home() {
                         <h2 className=" text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-yellow-100 to-yellow-400 bg-clip-text text-transparent lg:mb-15">
                             The Vibe
                         </h2>
-                        <div className="text-gray-200 text-xl lg:text-2xl space-y-3 leading-relaxed  ">
+                        <div className="text-gray-200 text-xl lg:text-2xl space-y-3 leading-relaxed">
                             <p className=" transform transition-all duration-400">
                                 At{" "}
                                 <span className="text-yellow-300 font-semibold">
