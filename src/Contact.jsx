@@ -48,7 +48,6 @@ function Contact() {
                 />
                 <div className="relative w-9/10 sm:w-7/10 md:w-6/10 lg:w-5/10 xl:w-4/10 mx-auto text-gray-100 rounded shadow z-10">
                     <h2 className="text-4xl font-anton font-semibold mb-5 text-yellow-600">
-                        {" "}
                         Get in touch.
                     </h2>
                     <p className="mb-10 font-semibold">
