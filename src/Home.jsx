@@ -110,10 +110,10 @@ function Home() {
             />
 
             <main>
-                <section className=" min-h-screen w-full grid content-center ">
+                <section className=" min-h-screen py-15 w-full grid content-center ">
                     <div
                         ref={vibeRef}
-                        className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/10 mb-12 flex flex-col items-center justify-center text-gray-100 py-5 w-5/6 lg:w-7/10 mx-auto"
+                        className="bg-white/5 backdrop-blur-sm rounded-3xl px-3 md:p-12 border border-white/10 mb-12 flex flex-col items-center justify-center text-gray-100 py-5 w-5/6 lg:w-7/10 mx-auto"
                     >
                         <h2 className=" text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-yellow-100 to-yellow-400 bg-clip-text text-transparent lg:mb-15">
                             The Vibe

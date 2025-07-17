@@ -197,12 +197,12 @@ const ServicesPage = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800 text-black rounded-xl text-lg font-bold hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600 transform transition-all duration-200 shadow-2xl hover:shadow-yellow-400/25">
+              <button className="bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800 text-black rounded-xl text-lg font-bold hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600 transform transition-all duration-200 shadow-md hover:shadow-yellow-400/25">
               <a target="blank" rel="noopener noreferrer" className=" whitespace-nowrap py-3 px-10 inline-flex items-center justify-center" href="https://wa.me/2348071029309?text=Hello%2C%20I%27d%20like%20to%20schedule%20an%20appointment.%20I%27m%20">
                                 Book Your Cut
                             </a>
               </button>
-              <button className="bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-xl text-lg font-semibold hover:bg-white/20 transition-all duration-200">
+              <button className="bg-white/5 backdrop-blur-sm border border-white/20 text-white rounded-xl text-lg font-semibold hover:bg-white/20 transition-all duration-200">
               <a
                             href="tel:+2347073334128"
                             rel="noopener noreferrer"
