@@ -5,7 +5,7 @@ function Header({ word, boolean }) {
             initial={{ x: "-50%", opacity: 0 }} // Start halfway off-screen to the left
             animate={{ x: "0%", opacity: 1 }} // Slide to original position and fade in
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="w-full h-screen bg-[url(/bg-1.jpg)] bg-center bg-fixed"
+            className="w-full h-screen bg-[url(/bg-1.jpg)] bg-center lg:bg-fixed"
         >
             <div className="bg-gradient-to-r from-black/60 to-black/60 w-full h-screen flex flex-col space-y-20 items-center justify-center">
                 <motion.div

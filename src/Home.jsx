@@ -108,7 +108,7 @@ function Home() {
 
             <main>
                 <section ref={vibeRef} className="bg-black min-h-screen w-full flex flex-col items-center justify-center text-gray-100 py-5 ">
-                    <h2 className="font-playfair font-bold text-5xl lg:text-6xl mb-15">
+                    <h2 className="font-playfair font-bold text-5xl lg:text-6xl mb-5 lg:mb-15">
                         The Vibe
                     </h2>
                     <div
