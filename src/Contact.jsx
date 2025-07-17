@@ -20,7 +20,7 @@ function Contact() {
 
         try {
             await emailjs.sendForm(
-                "otegbadYe",
+                "otegbade",
                 "otegbade",
                 form.current,
                 "tWXWx0ypsMSnrvDS7"

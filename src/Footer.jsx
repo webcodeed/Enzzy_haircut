@@ -32,9 +32,8 @@ function footer() {
 
                     <div className=" col-start-1 md:col-start-2 ">
                         <h3 className="text-lg font-bold mb-1">Hours</h3>
-                        <p>Tues-Fri 9:00am-6:00PM</p>
-                        <p>Sat-Sun 9:00am-8:00pm</p>
-                        <p>Closed Sun</p>
+                        <p>Mon-Thurs 9:00am-8:00PM</p>
+                        <p>Fri-Sun 9:00am-10:00pm</p>
                     </div>
                     <div className=" col-start-1 md:col-start-3 ">
                         <h3 className="text-lg font-bold mb-1">Contact Us</h3>
