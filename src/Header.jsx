@@ -1,5 +1,5 @@
 import { motion } from "motion/react"
-import Button from "./button"
+import ButtonCta from "./ButtonCta"
 function Header({ word, boolean }) {
     return (
         <header
@@ -18,7 +18,7 @@ function Header({ word, boolean }) {
                     <h2 className="text-center leading-tight">{word}</h2>
                 </motion.div>
                 {boolean && (
-                    <Button item={"Book Now"}/>
+                    <ButtonCta item={"Book Now"}/>
                 )}
             </div>
         </header>

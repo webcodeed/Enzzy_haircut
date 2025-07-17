@@ -1,4 +1,4 @@
-import Button from "./button"
+import ButtonCta from "./ButtonCta"
 
 function BottomCta() {
   return ( 
@@ -13,7 +13,7 @@ function BottomCta() {
                                 Enzzy Cutz for their grooming needs
                             </p>
 
-                            <Button item={"Book Your Appointment"}/>
+                            <ButtonCta item={"Book Your Appointment"}/>
                         </div>
                     </div>
                 </div>

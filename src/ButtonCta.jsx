@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react"
 
-function Button({item}) {
+function ButtonCta({item}) {
   return ( 
     <button
                                 rel="noopener noreferrer"
@@ -18,4 +18,4 @@ function Button({item}) {
    );
 }
 
-export default Button;
+export default ButtonCta;

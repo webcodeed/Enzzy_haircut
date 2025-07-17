@@ -4,7 +4,7 @@ import image1 from "./assets/images/logo-top.png"
 import image2 from "./assets/images/logo-trans.png"
 import Header from "./Header"
 import SlideShow from "./SlideShow"
-import Button from "./button"
+import ButtonCta from "./ButtonCta"
 import { MapPin } from "lucide-react"
 import BottomCta from "./BottomCta"
 function Home() {
@@ -144,7 +144,7 @@ function Home() {
                                 transition={{ duration: 1 }}
                                 className="mt-15 lg:mt-20"
                             >
-                                <Button item={"Book Now"} />
+                                <ButtonCta item={"Book Now"} />
                             </motion.div>
                         )}
                     </div>
@@ -225,7 +225,7 @@ function Home() {
                             </div>
                         </div>
 
-                        <Button item={"Book Now"} />
+                        <ButtonCta item={"Book Now"} />
                     </div>
                 </section>
             </main>
