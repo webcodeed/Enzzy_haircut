@@ -4,6 +4,9 @@ import image1 from "./assets/images/logo-top.png"
 import image2 from "./assets/images/logo-trans.png"
 import Header from "./Header"
 import SlideShow from "./SlideShow"
+import Button from "./button"
+import { MapPin } from "lucide-react"
+import BottomCta from "./BottomCta"
 function Home() {
     const typedText = `, you are a king, so every cut is personal.
     We blend clean fades, beard trims, and fresh styles with a vibe that feels like home.
@@ -25,7 +28,7 @@ function Home() {
                     setStarted(true)
                 }
             },
-            { threshold: 0.6 }
+            { threshold: 1 }
         )
 
         const current = vibeRef.current
@@ -94,7 +97,7 @@ function Home() {
         },
     ]
     return (
-        <>
+        <div div className=" bg-gradient-to-br from-gray-900 via-black to-gray-800">
             <Header
                 word={
                     <>
@@ -107,40 +110,44 @@ function Home() {
             />
 
             <main>
-                <section ref={vibeRef} className="bg-black min-h-screen w-full flex flex-col items-center justify-center text-gray-100 py-5 ">
-                    <h2 className="font-playfair font-bold text-5xl lg:text-6xl mb-5 lg:mb-15">
-                        The Vibe
-                    </h2>
+                <section className=" min-h-screen w-full grid content-center ">
                     <div
-                        className="text-gray-200 text-xl lg:text-2xl max-w-5/6 lg:max-w-7/10 space-y-3 leading-relaxed  "
+                        ref={vibeRef}
+                        className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/10 mb-12 flex flex-col items-center justify-center text-gray-100 py-5 w-5/6 lg:w-7/10 mx-auto"
                     >
-                        <p className=" transform transition-all duration-400">
-                            At{" "}
-                            <span className="text-yellow-300 font-semibold">
-                                Enzzy Cutz
-                            </span>
-                            {isType}
-                            <motion.span
+                        <h2 className=" text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-yellow-100 to-yellow-400 bg-clip-text text-transparent lg:mb-15">
+                            The Vibe
+                        </h2>
+                        <div className="text-gray-200 text-xl lg:text-2xl space-y-3 leading-relaxed  ">
+                            <p className=" transform transition-all duration-400">
+                                At{" "}
+                                <span className="text-yellow-300 font-semibold">
+                                    Enzzy Cutz
+                                </span>
+                                {isType}
+                                <motion.span
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{
+                                        duration: 0.5,
+                                        repeat: Infinity,
+                                    }}
+                                >
+                                    |
+                                </motion.span>
+                            </p>
+                        </div>
+                        {doneTyping && (
+                            <motion.div
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
-                                transition={{ duration: 0.5, repeat: Infinity }}
+                                transition={{ duration: 1 }}
+                                className="mt-15 lg:mt-20"
                             >
-                                |
-                            </motion.span>
-                        </p>
+                                <Button item={"Book Now"} />
+                            </motion.div>
+                        )}
                     </div>
-                    {doneTyping && (
-                        <motion.button
-                            initial={{ opacity: 0}}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 1 }}
-                            className="hover:bg-gradient-to-b hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600  py-5 bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800 font-serif text-black text-2xl font-semibold rounded-xl shadow-md active:scale-90 transition-all duration-300 mt-15 lg:mt-20"
-                        >
-                            <a target="blank" className="py-5 px-8" href="https://wa.me/2348071029309?text=Hello%2C%20I%27d%20like%20to%20schedule%20an%20appointment.%20I%27m%20">
-                                Book Now
-                            </a>
-                        </motion.button>
-                    )}
                 </section>
                 <section className=" relative bg-fixed bg-gradient-to-b from-neutral-700 via-black/95 to-neutral-700 w-full min-h-screen p-5">
                     <img
@@ -155,7 +162,7 @@ function Home() {
                                 src={image1}
                                 alt="image of top of logo"
                             />
-                            <h2 className="font-cinzel text-center text-4xl lg:text-6xl">
+                            <h2 className=" font-bold bg-gradient-to-r from-white via-yellow-100 to-yellow-400 bg-clip-text text-transparent text-center text-4xl lg:text-6xl">
                                 Price List
                             </h2>
                         </div>
@@ -200,24 +207,32 @@ function Home() {
                                         </p>
                                     </div>
                                 ))}
-                                <p className=" mt-5 text-lg font-semibold">
-                                    <span className="font-black">NOTE:</span>{" "}
-                                    THE PRICE VARIES BASED ON YOUR LOCATION AND
-                                    IT MAY INCREASE ACCORDINGLY
-                                </p>
+                                <div className="my-8 p-4 bg-yellow-400/20 rounded-xl border border-yellow-400/30">
+                                    <div className="flex items-start gap-3">
+                                        <MapPin className="w-5 h-5 text-yellow-400 mt-0.5 flex-shrink-0" />
+                                        <div>
+                                            <p className="text-sm font-semibold text-yellow-200 mb-1">
+                                                Location Notice
+                                            </p>
+                                            <p className="text-sm text-gray-300">
+                                                Prices may vary based on your
+                                                location and distance from our
+                                                salon
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <button className="hover:bg-gradient-to-b hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600  py-5 bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800 font-serif text-black text-2xl font-semibold rounded-xl shadow-md active:scale-90 transition-all duration-300 mt-15 mb-10 lg:mt-20">
-                            <a target="blank" className="py-5 px-8" href="https://wa.me/2348071029309?text=Hello%2C%20I%27d%20like%20to%20schedule%20an%20appointment.%20I%27m%20">
-                                Book Now
-                            </a>
-                        </button>
+
+                        <Button item={"Book Now"} />
                     </div>
                 </section>
             </main>
             {/* <Project/> */}
             <SlideShow />
-        </>
+            <BottomCta/>
+        </div>
     )
 }
 

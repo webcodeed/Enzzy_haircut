@@ -42,12 +42,14 @@ function footer() {
                             <a
                                 className="underline text-yellow-600 active:text-yellow-800 underline-offset-4"
                                 href="tel:+2347073334128"
+                                rel="noopener noreferrer"
                             >
                                 +234 707 333 4128
                             </a>
                             <a
                                 className="underline text-yellow-600 active:text-yellow-800 underline-offset-4"
                                 href="mailto:eabdulrofiu@gmail.com"
+                                rel="noopener noreferrer"
                             >
                                 eabdulrofiu@gmail.com
                             </a>

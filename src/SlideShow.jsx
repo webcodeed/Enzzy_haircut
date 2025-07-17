@@ -55,15 +55,12 @@ function SlideShow() {
     }, [isPaused])
 
     return (
-        <div className="w-full h-screen grid content-center bg-neutral-950 text-gray-100">
+        <div className="w-full h-screen grid content-center text-gray-100">
             <div className="mx-auto w-9/10 sm:w-8/10 md:w-7/10 lg:w-6/10 ">
                 <div className="text-center mb-10 space-y-3 ">
-                    <h2 className="font-playfair font-bold text-5xl lg:text-6xl text-yellow-400">
+                    <h2 className="font-playfair font-bold text-5xl lg:text-6xl  bg-gradient-to-r from-white via-yellow-100 to-yellow-400 bg-clip-text text-transparent">
                         The Gallery
                     </h2>
-                    <p className="text-white text-xl lg:text-2xl ">
-                        Real cuts from real clients. Check out the vibe.
-                    </p>
                 </div>
 
                 <div

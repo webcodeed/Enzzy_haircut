@@ -60,7 +60,7 @@ function Navbar() {
                         <ul className="flex justify-center md:justify-end space-x-5 md:space-x-0 md:grow md:gap-5">
                             {socials.map((item, index) => (
                                 <li className="active:scale-80 transition duration-300" onClick={() => setIsMenu(false)} key={index}>
-                                    <a target="blank" href={item.url}>{item.icon}</a>
+                                    <a target="blank" rel="noopener noreferrer" href={item.url}>{item.icon}</a>
                                 </li>
                             ))}
                         </ul>
@@ -68,8 +68,8 @@ function Navbar() {
                     <div className="flex items-center space-x-7 md:space-x-0 p-4 md:p-0">
 
                     {/* CTA  Button */}
-                            <button className="hover:bg-gradient-to-b hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600 bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800hover:bg-yellow-600 py-3 bg-yellow-500  text-black font-semibold rounded-xl shadow-md active:scale-90 transition-all duration-300" >
-                                <a target="blank" className="py-3 px-4" href="https://wa.me/2348071029309?text=Hello%2C%20I%27d%20like%20to%20schedule%20an%20appointment.%20I%27m%20">Book Now</a>
+                            <button className=" bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800 hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600   text-black font-semibold rounded-xl shadow-md active:scale-90 transition-all duration-300" >
+                                <a target="blank" rel="noopener noreferrer" className="py-3 px-4 inline-flex items-center justify-center" href="https://wa.me/2348071029309?text=Hello%2C%20I%27d%20like%20to%20schedule%20an%20appointment.%20I%27m%20">Book Now</a>
                             </button>
 
                     {/* Menu Button */}

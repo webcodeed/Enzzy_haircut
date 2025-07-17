@@ -1,4 +1,5 @@
 import { motion } from "motion/react"
+import Button from "./button"
 function Header({ word, boolean }) {
     return (
         <header
@@ -17,11 +18,7 @@ function Header({ word, boolean }) {
                     <h2 className="text-center leading-tight">{word}</h2>
                 </motion.div>
                 {boolean && (
-                    <button className="hover:bg-gradient-to-b hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600  py-5 bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800 font-serif text-black text-2xl font-semibold rounded-xl shadow-md active:scale-90 transition-all duration-300">
-                        <a target="blank" className="py-5 px-8" href="https://wa.me/2348071029309?text=Hello%2C%20I%27d%20like%20to%20schedule%20an%20appointment.%20I%27m%20">
-                            Book Now
-                        </a>
-                    </button>
+                    <Button item={"Book Now"}/>
                 )}
             </div>
         </header>

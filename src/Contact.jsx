@@ -40,14 +40,14 @@ function Contact() {
     return (
         <>
             <Header word={"Contact Us"} boolean={false} />
-            <section className=" relative h-screen w-full grid content-center bg-fixed bg-gradient-to-b from-neutral-700 via-black/95 to-neutral-700">
+            <section className=" relative h-screen w-full grid content-center lg:bg-fixed bg-gradient-to-br from-gray-900 via-black to-gray-800">
                 <img
                     className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-[0.4] w-8/10 md:w-6/10 lg:w-4/10"
                     src={image2}
                     alt="image of logo"
                 />
                 <div className="relative w-9/10 sm:w-7/10 md:w-6/10 lg:w-5/10 xl:w-4/10 mx-auto text-gray-100 rounded shadow z-10">
-                    <h2 className="text-4xl font-anton font-semibold mb-5 text-yellow-600">
+                    <h2 className="text-5xl md:text-6xl font-bold font-anton mb-5 bg-gradient-to-r from-white via-yellow-300 to-yellow-500 bg-clip-text text-transparent leading-tight">
                         Get in touch.
                     </h2>
                     <p className="mb-10 font-semibold">
@@ -55,6 +55,7 @@ function Contact() {
                         phone calls too work -{" "}
                         <a
                             href="tel:+2347073334128"
+                            rel="noopener noreferrer"
                             className=" underline underline-offset-4 text-yellow-600"
                         >
                             +234 707 333 4128
@@ -119,7 +120,7 @@ function Contact() {
                         <button
                             type="submit"
                             disabled={isLoading}
-                            className="hover:bg-gradient-to-b hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600 px-4 py-3 bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800 font-serif text-black font-bold rounded shadow-md active:scale-90 transition-all duration-300 disabled:opacity-50"
+                            className=" px-4 py-3 bg-gradient-to-b from-yellow-500 via-yellow-300 to-yellow-800 hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-600 shadow-2xl hover:shadow-yellow-400/25 font-serif text-black font-bold rounded active:scale-90 transition-all duration-300 disabled:opacity-50"
                         >
                             {isLoading ? "Sending..." : "Send Message"}
                         </button>
