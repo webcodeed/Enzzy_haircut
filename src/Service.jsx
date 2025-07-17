@@ -202,7 +202,7 @@ const ServicesPage = () => {
                                 Book Your Cut
                             </a>
               </button>
-              <button className="bg-white/5 backdrop-blur-sm border border-white/20 text-white rounded-xl text-lg font-semibold hover:bg-white/20 transition-all duration-200">
+              <button className="bg-white/30 backdrop-blur-sm border border-white/20 text-white rounded-xl text-lg font-semibold hover:bg-white/20 transition-all duration-200">
               <a
                             href="tel:+2347073334128"
                             rel="noopener noreferrer"
