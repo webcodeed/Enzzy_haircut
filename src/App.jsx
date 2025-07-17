@@ -1,13 +1,16 @@
-import { useState } from "react"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 import { Outlet } from "react-router"
+import ScrollToTop from "./ScrollToTop"
 function App() {
     return (
         <>
-            <Navbar />
-            <Outlet />
-            <Footer/>
+            <ScrollToTop />
+            <div>
+                <Navbar />
+                <Outlet />
+                <Footer />
+            </div>
         </>
     )
 }

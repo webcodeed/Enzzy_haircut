@@ -13,9 +13,9 @@ function Navbar() {
         { name: "Contact", url: "/contact" },
     ]
     const socials = [
-        { icon: <FaTiktok className="w-6 h-6" />, url: "https://www.tiktok.com/@enzzy_cut" },
-        { icon: <FaInstagram className="w-6 h-6" />, url: "https://www.instagram.com/only1_enzzy/" },
-        { icon: <FaFacebook className="w-6 h-6" />, url: "https://www.facebook.com/oyeyemi.eniola.54" },
+        { icon: <FaTiktok className="w-8 h-8 md:w-6 md:h-6" />, url: "https://www.tiktok.com/@enzzy_cut" },
+        { icon: <FaInstagram className="w-8 h-8 md:w-6 md:h-6" />, url: "https://www.instagram.com/only1_enzzy/" },
+        { icon: <FaFacebook className="w-8 h-8 md:w-6 md:h-6" />, url: "https://www.facebook.com/oyeyemi.eniola.54" },
     ]
 
     // menu

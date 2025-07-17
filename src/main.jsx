@@ -8,6 +8,7 @@ import Home from './Home.jsx'
 import Contact from './Contact.jsx'
 import Service from './Service.jsx'
 import About from './About.jsx'
+import NotFound from './NotFound.jsx'
 
 const routes = createBrowserRouter([
   {path: "/",
@@ -18,7 +19,11 @@ const routes = createBrowserRouter([
       {path:"/Service" , element: <Service/> },
 
     ],
-  }
+  },
+  {
+    path: "*",
+    element: <NotFound/> ,
+  },
 ])
 
 createRoot(document.getElementById('root')).render(
