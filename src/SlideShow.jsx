@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 
 function SlideShow() {
+    // Slide Show Images 
     const image = [
         "https://i.ibb.co/9k1Dchf5/haircut-image2.jpg",
         "https://i.ibb.co/p65wbkwy/haircut-image1.jpg",
@@ -10,7 +11,7 @@ function SlideShow() {
         "https://i.ibb.co/Jj9L7kFF/haircut-image5.jpg",
     ]
 
-    // Scroll Section 
+    // AutoScroll Action
     const scrollRef = useRef(null)
     const intervalRef = useRef(null)
     const [isPaused, setIsPaused] = useState(false)
@@ -27,7 +28,7 @@ function SlideShow() {
         setIsPaused((prev) => !prev)
     }
 
-    // Scroll Effect 
+    // Scroll Action 
     useEffect(() => {
         const scrollElement = scrollRef.current
         if (!scrollElement) return

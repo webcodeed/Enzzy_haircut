@@ -5,6 +5,7 @@ import image2 from "./assets/images/logo-trans.png"
 import { CheckCircle } from "lucide-react"
 
 function Contact() {
+    // Contact Form Actions
     const form = useRef()
     const [isSent, setIsSent] = useState(false)
     const [isLoading, setIsLoading] = useState(false)
@@ -39,13 +40,16 @@ function Contact() {
 
     return (
         <>
+            {/* Hero Section  */}
             <Header word={"Contact Us"} boolean={false} />
             <section className=" relative h-screen w-full grid content-center lg:bg-fixed bg-gradient-to-br from-gray-900 via-black to-gray-800">
+                {/* Background Image  */}
                 <img
                     className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-[0.4] w-8/10 md:w-6/10 lg:w-4/10"
                     src={image2}
                     alt="image of logo"
                 />
+                {/* Contact Section Heading  */}
                 <div className="relative w-9/10 sm:w-7/10 md:w-6/10 lg:w-5/10 xl:w-4/10 mx-auto text-gray-100 rounded shadow z-10">
                     <h2 className="text-5xl md:text-6xl font-bold font-anton mb-5 bg-gradient-to-r from-white via-yellow-300 to-yellow-500 bg-clip-text text-transparent leading-tight">
                         Get in touch.
@@ -61,8 +65,9 @@ function Contact() {
                             +234 707 333 4128
                         </a>
                     </p>
-
+                    {/* Contact Form  */}
                     <form ref={form} onSubmit={sendEmail} className="space-y-4">
+                        {/* Error Message  */}
                         {isError && (
                             <p className="text-white font-semibold text-lg bg-red-600 py-4 px-2 mt-4 ">
                                 {" "}
@@ -72,6 +77,7 @@ function Contact() {
                                 {isError}
                             </p>
                         )}
+                        {/* Name Section  */}
                         <div>
                             <label
                                 htmlFor="name"
@@ -91,7 +97,7 @@ function Contact() {
                                 placeholder="e.g. Enzzy Cutz"
                             />
                         </div>
-
+                        {/* Number Section  */}
                         <div>
                             <label
                                 htmlFor="number"
@@ -112,7 +118,7 @@ function Contact() {
                                 placeholder="e.g. 08012345678"
                             />
                         </div>
-
+                        {/* Message Section  */}
                         <div>
                             <label
                                 htmlFor="message"
@@ -131,7 +137,7 @@ function Contact() {
                                 className="w-full bg-gray-200 text-black px-3 py-2 rounded"
                             />
                         </div>
-
+                        {/* Submit Button  */}
                         <button
                             type="submit"
                             disabled={isLoading}
@@ -141,6 +147,7 @@ function Contact() {
                         </button>
                     </form>
                 </div>
+                {/* Succesfull Message  */}
                 {isSent && (
                     <div
                         onClick={handleClose}

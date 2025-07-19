@@ -3,6 +3,7 @@ import Header from "./Header"
 import { MapPin, Quote, Scissors, Heart, Zap } from "lucide-react"
 
 const AboutPage = () => {
+    // Values Item
     const values = [
         {
             icon: <Scissors className="w-6 h-6" />,
@@ -23,6 +24,7 @@ const AboutPage = () => {
         },
     ]
 
+    // Location Item
     const areas = [
         "Panseke",
         " Odeda",
@@ -34,12 +36,13 @@ const AboutPage = () => {
 
     return (
         <>
+            {/* Hero Section  */}
             <Header
                 word={"More Than Just a Haircut, It’s a Lifestyle"}
                 boolean={true}
             />
             <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
-                {/* Hero Section */}
+                {/* Main Title Section */}
                 <div className="relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/20 to-amber-500/20"></div>
                     <div className="relative container mx-auto px-4 py-10 text-center">
@@ -175,7 +178,7 @@ const AboutPage = () => {
                 </div>
 
                 {/* Call to Action */}
-                <BottomCta/>
+                <BottomCta />
             </div>
         </>
     )

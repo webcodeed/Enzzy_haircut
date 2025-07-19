@@ -8,18 +8,20 @@ import ButtonCta from "./ButtonCta"
 import { MapPin } from "lucide-react"
 import BottomCta from "./BottomCta"
 function Home() {
+    
+    // AutoType Action
+    const [isType, setIsType] = useState("")
+    const [doneTyping, setDoneTyping] = useState(false)
+    const [started, setStarted] = useState(false)
+    const indexRef = useRef(0)
+    const vibeRef = useRef(null)
+
     const typedText = `, you are a king, so every cut is personal.
     We blend clean fades, beard trims, and fresh styles with a vibe that feels like home.
     Our space is laid back, our music is always on, and the energy stays sharp.
     Whether you're here for a quick shape-up or a full transformation, you’ll leave feeling confident and looking your best.
     We’re not just a barbershop in Abeokuta, we’re a community.
     Pull up, relax, and let’s elevate your style.`
-
-    const [isType, setIsType] = useState("")
-    const [started, setStarted] = useState(false)
-    const indexRef = useRef(0)
-    const vibeRef = useRef(null)
-    const [doneTyping, setDoneTyping] = useState(false)
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -52,6 +54,7 @@ function Home() {
         return () => clearTimeout(timer)
     }, [isType, started])
 
+    // Price List Details
     const salonPrice = [
         {
             name: "Haircut(Barbing)",
@@ -96,8 +99,10 @@ function Home() {
             price: "5,000",
         },
     ]
+
     return (
         <div className=" bg-gradient-to-br from-gray-900 via-black to-gray-800">
+            {/* Hero Section  */}
             <Header
                 word={
                     <>
@@ -109,15 +114,18 @@ function Home() {
                 boolean={true}
             />
 
+            {/* Main Section  */}
             <main>
                 <section className=" min-h-screen py-15 w-full grid content-center ">
                     <div
                         ref={vibeRef}
                         className="bg-white/5 backdrop-blur-sm rounded-3xl px-3 md:p-12 border border-white/10 mb-12 flex flex-col items-center justify-center text-gray-100 py-5 w-5/6 lg:w-7/10 mx-auto"
                     >
+                        {/* Main Title  */}
                         <h2 className=" text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-yellow-100 to-yellow-400 bg-clip-text text-transparent lg:mb-15">
                             The Vibe
                         </h2>
+                        {/* AutoType Section  */}
                         <div className="text-gray-200 text-xl lg:text-2xl space-y-3 leading-relaxed">
                             <p className=" transform transition-all duration-400">
                                 At{" "}
@@ -137,6 +145,7 @@ function Home() {
                                 </motion.span>
                             </p>
                         </div>
+                        {/* CTA Button */}
                         {doneTyping && (
                             <motion.div
                                 initial={{ opacity: 0 }}
@@ -149,12 +158,15 @@ function Home() {
                         )}
                     </div>
                 </section>
+                {/* Price List Section  */}
                 <section className=" relative bg-fixed bg-gradient-to-b from-neutral-700 via-black/95 to-neutral-700 w-full min-h-screen p-5">
+                    {/* Background Logo Image  */}
                     <img
                         className=" absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-[0.2] w-8/10 md:w-6/10 lg:w-4/10"
                         src={image2}
                         alt="image of logo"
                     />
+                    {/* Top Of Page Image  */}
                     <div className="flex flex-col items-center justify-center text-gray-100 mx-auto sm:max-w-7/10 md:max-w-6/10 lg:max-w-5/10  ">
                         <div className="space-y-4">
                             <img
@@ -170,6 +182,7 @@ function Home() {
                             ENZZY CUTZ SALOON
                         </h2>
                         <div className=" my-5 space-y-15">
+                            {/* Salon Price Section  */}
                             <div className=" space-y-2">
                                 <h2 className="text-lg font-serif text-center font-semibold">
                                     ENZZY-(THE KING MAKER)
@@ -189,6 +202,7 @@ function Home() {
                                     </div>
                                 ))}
                             </div>
+                            {/* Home Price Section  */}
                             <div className=" space-y-2">
                                 <h2 className=" text-lg font-serif text-center font-semibold">
                                     HOME SERVICE
@@ -224,14 +238,15 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-
+                        {/* CTA Button  */}
                         <ButtonCta item={"Book Now"} />
                     </div>
                 </section>
             </main>
-            {/* <Project/> */}
+            {/* gallery Section */}
             <SlideShow />
-            <BottomCta/>
+            {/* CTA Section  */}
+            <BottomCta />
         </div>
     )
 }

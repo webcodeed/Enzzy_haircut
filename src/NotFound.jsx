@@ -3,6 +3,7 @@ import { MoveLeft } from "lucide-react";
 
 export default function NotFound() {
   return (
+    // Page Not Found Section 
     <div className="min-h-screen bg-black flex flex-col items-center justify-center text-white px-6 text-center">
       <h1 className="text-7xl font-extrabold text-yellow-400">404</h1>
       <p className="mt-4 text-2xl font-semibold">This page didn’t make the cut.</p>

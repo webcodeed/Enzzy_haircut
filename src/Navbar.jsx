@@ -5,28 +5,29 @@ import { Link, useLocation } from "react-router"
 import image from './assets/images/logo-trans.png'
 
 function Navbar() {
-    // navigation links
+    // Navigation Links
     const navigate = [
         { name: "Home", url: "/" },
         { name: "About", url: "/about" },
         { name: "Services", url: "/service" },
         { name: "Contact", url: "/contact" },
     ]
+     // Social Links
     const socials = [
         { icon: <FaTiktok className="w-8 h-8 md:w-6 md:h-6" />, url: "https://www.tiktok.com/@enzzy_cut" },
         { icon: <FaInstagram className="w-8 h-8 md:w-6 md:h-6" />, url: "https://www.instagram.com/only1_enzzy/" },
         { icon: <FaFacebook className="w-8 h-8 md:w-6 md:h-6" />, url: "https://www.facebook.com/oyeyemi.eniola.54" },
     ]
 
-    // menu
+    // Menu Action
     const [isMenu, setIsMenu] = useState(false)
-
-    // section observer 
-    const location = useLocation()
-
     const  handleClick = () => {
        setIsMenu(false)
     }
+
+    // Page Observer 
+    const location = useLocation()
+
 
     return (
             <nav className="fixed text-gray-100 top-0 w-full backdrop-blur-md font-serif bg-white/10 border-b border-white/20 shadow-md md:p-4 md:mx-auto rounded-xl z-50 " >
@@ -46,7 +47,7 @@ function Navbar() {
                         }`}
                         >
                             
-                      {/* Navigate  */}
+                      {/* Navigation Links Section  */}
                         <div className=" flex flex-col md:flex-row md:gap-3 lg:gap-0 justify-evenly md:grow md:my-auto text-2xl md:text-base font-medium leading-snug">
                             {navigate.map((item) => (
                                 <Link className={` md:relative md:after:content-[''] md:after:absolute md:after:left-0 md:after:bottom-0 md:after:h-[3px] md:after:w-full md:after:origin-center md:after:transform md:after:transition-transform md:after:duration-300 md:after:scale-x-0 md:hover:after:scale-x-100
@@ -56,7 +57,7 @@ function Navbar() {
                             ))}
                         </div>
 
-                        {/* Socials */}
+                        {/* Socials Links Section */}
                         <ul className="flex justify-center md:justify-end space-x-5 md:space-x-0 md:grow md:gap-5">
                             {socials.map((item, index) => (
                                 <li className="active:scale-80 transition duration-300" onClick={() => setIsMenu(false)} key={index}>

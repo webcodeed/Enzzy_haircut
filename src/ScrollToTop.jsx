@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router";
 
 function ScrollToTop() {
+  // Scroll To The Top Section 
   const { pathname } = useLocation();
 
   useEffect(() => {
