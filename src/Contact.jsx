@@ -73,43 +73,58 @@ function Contact() {
                             </p>
                         )}
                         <div>
-                            <label className="block font-semibold mb-2">
+                            <label
+                                htmlFor="name"
+                                className="block font-semibold mb-2"
+                            >
                                 Name{" "}
                                 <span className=" text-gray-400">
                                     (required)
                                 </span>
                             </label>
                             <input
+                                id="name"
                                 type="text"
                                 name="name"
                                 required
                                 className="w-full bg-gray-200 text-black px-3 py-2 rounded"
+                                placeholder="e.g. Enzzy Cutz"
                             />
                         </div>
 
                         <div>
-                            <label className="block mb-2 font-semibold">
-                                Email{" "}
+                            <label
+                                htmlFor="number"
+                                className="block mb-2 font-semibold"
+                            >
+                                Phone Number{" "}
                                 <span className=" text-gray-400">
                                     (required)
                                 </span>
                             </label>
                             <input
-                                type="email"
+                                id="number"
+                                type="tel"
                                 name="email"
                                 required
                                 className="w-full bg-gray-200 text-black px-3 py-2 rounded"
+                                pattern="^0[789][01]\d{8}$"
+                                placeholder="e.g. 08012345678"
                             />
                         </div>
 
                         <div>
-                            <label className="block font-semibold mb-2">
+                            <label
+                                htmlFor="message"
+                                className="block font-semibold mb-2"
+                            >
                                 Message{" "}
                                 <span className=" text-gray-400">
                                     (required)
                                 </span>
                             </label>
                             <textarea
+                                id="message"
                                 name="message"
                                 rows="4"
                                 required
@@ -133,11 +148,11 @@ function Contact() {
                     >
                         <div
                             onClick={(e) => e.stopPropagation()}
-                            className=" absolute flex backdrop-blur-2xl flex-col justify-center items-center z-50 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  bg-white w-7/10 sm:w-5/10 h-4/10"
+                            className=" absolute flex backdrop-blur-2xl flex-col justify-center items-center z-50 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  bg-white w-7/10 sm:w-5/10 md:w-4/10 lg:w-3/10 h-4/10"
                         >
                             <CheckCircle className=" text-green-600 m-2 w-5/10 h-5/10" />
 
-                            <p className="text-black m-2">
+                            <p className="text-black m-2 font-bold">
                                 Message sent successfully!
                             </p>
                             <button
