@@ -8,7 +8,6 @@ import ButtonCta from "./ButtonCta"
 import { MapPin } from "lucide-react"
 import BottomCta from "./BottomCta"
 function Home() {
-    
     // AutoType Action
     const [isType, setIsType] = useState("")
     const [doneTyping, setDoneTyping] = useState(false)
@@ -47,7 +46,7 @@ function Home() {
             timer = setTimeout(() => {
                 setIsType((prev) => prev + typedText[indexRef.current])
                 indexRef.current += 1
-            }, 50)
+            }, 10)
         } else if (!doneTyping && indexRef.current === typedText.length - 1) {
             setDoneTyping(true)
         }
@@ -137,7 +136,7 @@ function Home() {
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     transition={{
-                                        duration: 0.5,
+                                        duration: 0.3,
                                         repeat: Infinity,
                                     }}
                                 >
