@@ -3,6 +3,9 @@ import image from "./assets/images/logo-trans.png"
 import { Link } from "react-router"
 import { motion } from "motion/react"
 function footer() {
+
+    // small change 
+    
     // Navigation Links
     const navigate = [
         { name: "Home", url: "/" },
